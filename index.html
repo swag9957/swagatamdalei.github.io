@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swag Website</title>
+  <title>SWAGATAM | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      overflow-x: hidden;
     }
 
     header {
@@ -26,52 +25,97 @@
       -webkit-text-fill-color: transparent;
     }
 
-    p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      opacity: 0.8;
+    nav {
+      text-align: center;
+      margin-top: 20px;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background: #ff6a00;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 1em;
-      cursor: pointer;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ffcc70;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
       transition: transform 0.3s ease;
     }
 
-    .btn:hover {
-      transform: scale(1.1);
-      background: #ee0979;
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    footer {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 0.9em;
-      opacity: 0.6;
-    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to SWAGATAM's World</h1>
-    <p>Dynamic. Stylish. Made with ❤️ and Code.</p>
-    <button class="btn">Explore More</button>
+    <h1>Hi, I'm SWAGATAM</h1>
+    <p>B.Tech Computer Science Student | Tech Enthusiast | Creative Thinker</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
+  <section id="projects">
+    <h2>💼 Projects</h2>
+    <div class="project">
+      <h3>Student Result Management System</h3>
+      <p>Built with HTML, CSS, JS & PHP. Allows admin to manage student records and generate results dynamically.</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Personal website to showcase my skills, projects, and achievements. Hosted on GitHub Pages.</p>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Uses OpenWeather API to fetch live weather data. Built with JavaScript and Bootstrap.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li>Languages: C, C++, Java, Python</li>
+      <li>Web: HTML, CSS, JavaScript, PHP</li>
+      <li>Tools: Git, VS Code, Canva, Figma</li>
+      <li>Database: MySQL, Firebase</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: swag.student@example.com</p>
+    <p>GitHub: <a href="https://github.com/swagatam" style="color:#ffcc70;">github.com/swagatam</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/swagatam" style="color:#ffcc70;">linkedin.com/in/swagatam</a></p>
+  </section>
+
   <footer>
-    &copy; 2025 SWAGATAM | Crafted with creativity and tech
+    &copy; 2025 SWAGATAM | Designed with ❤️ and Code
   </footer>
+
 </body>
 </html>
