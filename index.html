@@ -1,196 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swagatam Dalei | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swag Website</title>
   <style>
-    /* Reset */
-    * {margin: 0; padding: 0; box-sizing: border-box;}
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #1e3c72, #2a5298);
-      color: #fff;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: white;
+      overflow-x: hidden;
     }
+
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background: rgba(0,0,0,0.3);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      font-size: 24px;
-      animation: fadeInLeft 2s ease;
-    }
-    header nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      transition: color 0.3s;
-    }
-    header nav a:hover {
-      color: #ffcc00;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in-out;
     }
 
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
+    h1 {
+      font-size: 3em;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .hero h2 {
-      font-size: 50px;
-      animation: fadeInDown 2s ease;
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      opacity: 0.8;
     }
-    .hero p {
-      font-size: 20px;
-      margin: 20px 0;
-      animation: fadeInUp 2s ease;
-    }
+
     .btn {
-      background: #ffcc00;
-      color: #000;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-      animation: fadeInUp 2.5s ease;
-    }
-    .btn:hover {
-      background: #fff;
-      color: #000;
-      transform: scale(1.1);
-    }
-
-    /* Section */
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 30px;
-      position: relative;
-    }
-    section h2::after {
-      content: '';
-      width: 60px;
-      height: 4px;
-      background: #ffcc00;
-      display: block;
-      margin: 10px auto;
-    }
-
-    /* Skills */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .skill {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .skill:hover {
-      transform: translateY(-10px);
-    }
-
-    /* Contact */
-    .contact {
-      text-align: center;
-    }
-    .contact a {
       display: inline-block;
-      margin: 10px;
-      color: #ffcc00;
-      font-size: 18px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .contact a:hover {
-      color: #fff;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: #ff6a00;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
-    /* Animations */
-    @keyframes fadeInDown {
-      from {opacity: 0; transform: translateY(-50px);}
-      to {opacity: 1; transform: translateY(0);}
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ee0979;
     }
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(50px);}
-      to {opacity: 1; transform: translateY(0);}
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    @keyframes fadeInLeft {
-      from {opacity: 0; transform: translateX(-50px);}
-      to {opacity: 1; transform: translateX(0);}
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Swagatam Dalei</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Welcome to SWAGATAM's World</h1>
+    <p>Dynamic. Stylish. Made with ❤️ and Code.</p>
+    <button class="btn">Explore More</button>
   </header>
 
-  <div class="hero">
-    <div class="profile">
-      <img src="profile.jpg" alt="Swagatam Photo" class="profile-pic">
-    </div>
-    <h2>Hello, I'm <span style="color:#ffcc00;">Swagatam</span></h2>
-    <p>Aspiring Computer Science Engineer | B.Tech CSE Student</p>
-    <button class="btn">View My Work</button>
-  </div>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center;">I am a B.Tech CSE student passionate about web development, AI/ML, and problem solving.  
-    I love building projects and learning new technologies to enhance my skills.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">C / C++</div>
-      <div class="skill">Python</div>
-      <div class="skill">HTML / CSS / JS</div>
-      <div class="skill">AI / ML Basics</div>
-      <div class="skill">Database (MySQL)</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <p style="text-align:center;">Coming Soon... 🚀</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact">
-      <a href="mailto:swagatam9957@gmail.com">📧 Email</a>
-      <a href="https://swagatamdalei.github.io" target="_blank">💻 GitHub</a>
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
-    </div>
-  </section>
+  <footer>
+    &copy; 2025 SWAGATAM | Crafted with creativity and tech
+  </footer>
 </body>
 </html>
