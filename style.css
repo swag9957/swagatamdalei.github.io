@@ -6,8 +6,31 @@ font-family:Arial;
 }
 
 body{
-background:#0a0a2a;
-color:white;
+    margin: 0;
+    color: white;
+
+    background: linear-gradient(
+        -45deg,
+        #0f172a,
+        #312e81,
+        #2563eb,
+        #0f172a
+    );
+
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 nav{
@@ -45,6 +68,7 @@ font-size:60px;
 .btn{
 display:inline-block;
 margin-top:20px;
+margin-right:10px;
 padding:12px 25px;
 background:#6C63FF;
 border-radius:5px;
@@ -104,11 +128,17 @@ margin:10px 0;
 }
 
 button{
-padding:12px 20px;
+
+padding:12px 25px;
 background:#6C63FF;
 border:none;
+border-radius: 8px;
 color:white;
 cursor:pointer;
+transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
 }
 .profile-img{
     width: 270px;
@@ -128,10 +158,20 @@ cursor:pointer;
 
 .btn:hover{
     transform:scale(1.05);
+    transition:0.3s;
 }
 footer{
     text-align: center;
     padding: 20px;
     margin-top: 50px;
     border-top: 1px solid #333;
+}
+#contact{
+    max-width: 700px;
+    margin: auto;
+}
+#form-status{
+    color: lightgreen;
+    font-weight: bold;
+    margin-top: 10px;
 }
